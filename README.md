@@ -1,4 +1,1 @@
-# Refactoring TeamA
-
-Ansprechpartner für Rückfragen:
-peter.koehler@iem.thm.de und Christian Knoth <Christian.Knoth@iem.thm.de>
+Note that this is only a source code example of a project that uses the SequalsK transpiler. In order to use this app, you have to create an own Firebase project and integrate the resulting google-services.json file.
