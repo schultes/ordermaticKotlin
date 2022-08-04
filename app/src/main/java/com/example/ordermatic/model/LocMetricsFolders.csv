@@ -1,0 +1,6 @@
+Folder,Files,LOC,SLOC-P,SLOC-L,MVG,BLOC,C&SLOC,CLOC,CWORD,HCLOC,HCWORD
+Total,12,908,810,188,70,83,1,15,22,0,0
+C:\Users\Dominik Schultes\Desktop\Tmp Code Analyse\refactoring-teama-master\app\src\main\java\com\example\ordermatic\model,12,908,810,188,70,83,1,15,22,0,0
+C:\Users\Dominik Schultes\Desktop\Tmp Code Analyse\refactoring-teama-master\app\src\main\java\com\example\ordermatic\model\authentication,1,50,45,13,2,5,0,0,0,0,0
+C:\Users\Dominik Schultes\Desktop\Tmp Code Analyse\refactoring-teama-master\app\src\main\java\com\example\ordermatic\model\database,1,577,525,143,40,37,0,15,20,0,0
+C:\Users\Dominik Schultes\Desktop\Tmp Code Analyse\refactoring-teama-master\app\src\main\java\com\example\ordermatic\model\helper,1,11,7,0,0,4,0,0,0,0,0

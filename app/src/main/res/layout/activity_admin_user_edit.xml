@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFBEF">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/schriftfarbe"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_margin="7dp"
+        android:contentDescription="@string/icondescription"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_editProfile_headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="center"
+        android:text="@string/profilBearbeiten"
+        android:textColor="@color/background"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/newPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="@string/altespasswortPerson"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPasswordOld"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.167"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPasswordNewRepeat"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="280dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:ems="10"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="center"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/newPerson_PWeingeben"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="@string/neuespasswortPerson"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPasswordNew"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/rolleAuswahl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="@string/auswahlRolle"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPasswordNewRepeat" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutKitchen"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_person_kitchen"
+        android:clickable="true"
+        android:onClick="selectRole"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayoutService"
+        app:layout_constraintHorizontal_bias="0.657"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rolleAuswahl">
+
+        <ImageView
+            android:id="@+id/kitchen_iconpic"
+            android:layout_width="89dp"
+            android:layout_height="54dp"
+            android:contentDescription="@string/button_for_kitchen_role"
+            android:gravity="center"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp" />
+
+        <TextView
+            android:id="@+id/kitchen_buttontext"
+            android:layout_width="89dp"
+            android:layout_height="26dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="Küche"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBar"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/button_person_bar"
+        android:clickable="true"
+        android:onClick="selectRole"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rolleAuswahl">
+
+        <ImageView
+            android:id="@+id/bar_iconpic"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:contentDescription="@string/button_for_bar_role"
+            android:gravity="center"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp" />
+
+        <TextView
+            android:id="@+id/bar_buttontext"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="Bar"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutService"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/button_person_service"
+        android:clickable="true"
+        android:onClick="selectRole"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayoutBar"
+        app:layout_constraintTop_toBottomOf="@+id/rolleAuswahl">
+
+        <ImageView
+            android:id="@+id/service_iconpic"
+            android:layout_width="89dp"
+            android:layout_height="54dp"
+            android:contentDescription="@string/button_for_service_role"
+            android:gravity="center"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp" />
+
+        <TextView
+            android:id="@+id/service_buttontext"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="Service"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="357dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_general_confirm"
+        android:fontFamily="@font/lato_bold"
+        android:onClick="updateUser"
+        android:text="@string/aenderungenBestaetigen"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutService" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutDelete"
+        android:layout_width="63dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_general_red"
+        android:clickable="true"
+        android:onClick="deleteUser"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSave">
+
+        <ImageView
+            android:id="@+id/deletePerson_iconpic"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:contentDescription="@string/button_for_delete_person"
+            android:gravity="center"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="5dp" />
+
+        <TextView
+            android:id="@+id/deletePerson_buttontext"
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="löschen"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextPasswordOld"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:ems="10"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="center"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/newPerson_PWeingeben"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/newPerson_PWbestaetigen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="@string/passwortPersonBestaetigen"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPasswordNewRepeat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPasswordNew"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="4dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:ems="10"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="center"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/newPerson_PWbestaetigen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ordermatic">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OrderMatic">
+        <activity android:name="com.example.ordermatic.view.activity.KitchenBarArchivedDishesActivity" />
+        <activity android:name="com.example.ordermatic.view.activity.KitchenBarArchivedOrdersActivity" />
+        <activity android:name="com.example.ordermatic.view.activity.ServicePaymentActivity" />
+        <activity android:name="com.example.ordermatic.view.activity.KitchenBarActiveDishesActivity" />
+        <activity android:name="com.example.ordermatic.view.activity.ServiceAlreadyOrderedDishesActivity" />
+        <activity android:name="com.example.ordermatic.view.activity.ServiceAddDishesToOrderActivity" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.example.ordermatic.view.activity.ServiceOrderedDishesOverviewActivity" />
+        <activity android:name="com.example.ordermatic.view.activity.ServiceCreateOrderActivity" />
+        <activity android:name="com.example.ordermatic.view.activity.ServiceDashboardActivity" />
+        <activity android:name="com.example.ordermatic.view.activity.KitchenBarActiveOrdersActivity" />
+        <activity android:name="com.example.ordermatic.view.activity.KitchenBarDashboardActivity" />
+        <activity android:name="com.example.ordermatic.view.activity.GeneralMenuDishesActivity" />
+        <activity android:name="com.example.ordermatic.view.activity.AdminUserEditActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.example.ordermatic.view.activity.AdminUserCreateActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.example.ordermatic.view.activity.AdminUsersOverviewActivity" />
+        <activity android:name="com.example.ordermatic.view.activity.AdminDashboardActivity" />
+        <activity android:name="com.example.ordermatic.view.activity.AdminDishEditActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.example.ordermatic.view.activity.AdminDishesOverviewActivity" />
+        <activity android:name="com.example.ordermatic.view.activity.GeneralUserLoginActivity" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.example.ordermatic.view.activity.GeneralChooseAccountActivity" />
+        <activity android:name="com.example.ordermatic.view.activity.GeneralMenuSelectionActivity" />
+        <activity android:name="com.example.ordermatic.view.activity.AuthenticationBusinessRegisterActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.example.ordermatic.view.activity.AuthenticationBusinessLoginActivity" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

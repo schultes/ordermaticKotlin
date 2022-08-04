@@ -1,0 +1,14 @@
+Folder,Files,LOC,SLOC-P,SLOC-L,MVG,BLOC,C&SLOC,CLOC,CWORD,HCLOC,HCWORD
+Total,90,4705,3803,741,200,767,7,135,312,0,0
+C:\Users\Dominik Schultes\Desktop\Tmp Code Analyse\refactoring-teama-master\app\src\main\java\com\example\ordermatic,90,4705,3803,741,200,767,7,135,312,0,0
+C:\Users\Dominik Schultes\Desktop\Tmp Code Analyse\refactoring-teama-master\app\src\main\java\com\example\ordermatic\controller,39,2562,2011,400,87,431,4,120,288,0,0
+C:\Users\Dominik Schultes\Desktop\Tmp Code Analyse\refactoring-teama-master\app\src\main\java\com\example\ordermatic\controller\model,19,699,603,186,33,88,0,8,63,0,0
+C:\Users\Dominik Schultes\Desktop\Tmp Code Analyse\refactoring-teama-master\app\src\main\java\com\example\ordermatic\controller\view,20,1863,1408,214,54,343,4,112,225,0,0
+C:\Users\Dominik Schultes\Desktop\Tmp Code Analyse\refactoring-teama-master\app\src\main\java\com\example\ordermatic\model,12,908,810,188,70,83,1,15,22,0,0
+C:\Users\Dominik Schultes\Desktop\Tmp Code Analyse\refactoring-teama-master\app\src\main\java\com\example\ordermatic\model\authentication,1,50,45,13,2,5,0,0,0,0,0
+C:\Users\Dominik Schultes\Desktop\Tmp Code Analyse\refactoring-teama-master\app\src\main\java\com\example\ordermatic\model\database,1,577,525,143,40,37,0,15,20,0,0
+C:\Users\Dominik Schultes\Desktop\Tmp Code Analyse\refactoring-teama-master\app\src\main\java\com\example\ordermatic\model\helper,1,11,7,0,0,4,0,0,0,0,0
+C:\Users\Dominik Schultes\Desktop\Tmp Code Analyse\refactoring-teama-master\app\src\main\java\com\example\ordermatic\view,39,1235,982,153,43,253,2,0,2,0,0
+C:\Users\Dominik Schultes\Desktop\Tmp Code Analyse\refactoring-teama-master\app\src\main\java\com\example\ordermatic\view\activity,23,593,465,73,3,128,1,0,1,0,0
+C:\Users\Dominik Schultes\Desktop\Tmp Code Analyse\refactoring-teama-master\app\src\main\java\com\example\ordermatic\view\adapter,11,542,441,67,31,101,1,0,1,0,0
+C:\Users\Dominik Schultes\Desktop\Tmp Code Analyse\refactoring-teama-master\app\src\main\java\com\example\ordermatic\view\helper,5,100,76,13,9,24,0,0,0,0,0

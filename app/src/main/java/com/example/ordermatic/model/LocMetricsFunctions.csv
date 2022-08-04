@@ -1,0 +1,4 @@
+File,Function,LOC,SLOC-P,SLOC-L,MVG,BLOC,C&SLOC,CLOC,CWORD
+C:\Users\Dominik Schultes\Desktop\Tmp Code Analyse\refactoring-teama-master\app\src\main\java\com\example\ordermatic\model\DishesType.kt,DishesType(val rawValue: String),9,8,4,0,1,0,0,0,
+C:\Users\Dominik Schultes\Desktop\Tmp Code Analyse\refactoring-teama-master\app\src\main\java\com\example\ordermatic\model\OrderDishesStatus.kt,OrderDishesStatus(val rawValue: String),8,7,4,0,1,0,0,0,
+C:\Users\Dominik Schultes\Desktop\Tmp Code Analyse\refactoring-teama-master\app\src\main\java\com\example\ordermatic\model\UserRole.kt,UserRole(val rawValue: String),10,8,4,0,2,0,0,0,

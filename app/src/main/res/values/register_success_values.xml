@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="TextView_message_success">Registrierung erfolgreich!</string>
+    <string name="TextView_message_announcement">Ihre Betriebs-ID lautet:</string>
+    <string name="Button_back_to_login">Zum Login</string>
+</resources>

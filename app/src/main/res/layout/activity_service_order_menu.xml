@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Pattern"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/schriftfarbe"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/service_logo"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="7dp"
+            android:contentDescription="@string/icondescription"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Header_Overview_Menu_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_bold"
+            android:gravity="center"
+            android:text="@string/Menu"
+            android:textColor="@color/background"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+        <LinearLayout
+            android:id="@+id/edit_getraenke_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_dishes_edit_drinks"
+            android:clickable="true"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/edit_vorspeisen_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/getraenke_icon"
+                android:layout_width="79dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:contentDescription="@string/getraenke_button"
+                android:padding="6dp" />
+
+            <TextView
+                android:id="@+id/edit_getraenke_text"
+                android:layout_width="192dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:paddingStart="-20dp"
+                android:text="@string/getraenke_button"
+                android:textColor="@color/schriftfarbe"
+                android:textSize="26sp"
+                tools:ignore="HardcodedText,RtlSymmetry" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/edit_vorspeisen_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_dishes_edit_starters"
+            android:clickable="true"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/edit_hauptspeisen_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.535"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_getraenke_button">
+
+            <ImageView
+                android:id="@+id/vorspeisen_pic"
+                android:layout_width="80dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:contentDescription="@string/vorspeisen_button"
+                android:padding="6dp" />
+
+            <TextView
+                android:id="@+id/edit_vorspeisen_text"
+                android:layout_width="196dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:paddingStart="-20dp"
+                android:text="@string/vorspeisen_button"
+                android:textColor="@color/schriftfarbe"
+                android:textSize="26sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/edit_hauptspeisen_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_dishes_edit_maindishes"
+            android:clickable="true"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/edit_desserts_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_vorspeisen_button">
+
+            <ImageView
+                android:id="@+id/hauptspeisen_pic"
+                android:layout_width="80dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:contentDescription="@string/hauptspeisen_button"
+                android:padding="6dp" />
+
+            <TextView
+                android:id="@+id/edit_hauptspeisen_text"
+                android:layout_width="197dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:text="@string/hauptspeisen_button"
+                android:textColor="@color/schriftfarbe"
+                android:textSize="26sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/edit_desserts_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_dishes_edit_desserts"
+            android:clickable="true"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/footer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_hauptspeisen_button">
+
+            <ImageView
+                android:id="@+id/desserts_pic"
+                android:layout_width="80dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:contentDescription="@string/desserts_button"
+                android:padding="6dp" />
+
+            <TextView
+                android:id="@+id/edit_desserts_text"
+                android:layout_width="199dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:paddingStart="-20dp"
+                android:text="@string/desserts_button"
+                android:textColor="@color/schriftfarbe"
+                android:textSize="26sp"
+                tools:ignore="HardcodedText,RtlSymmetry" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/footer"
+            android:layout_width="375dp"
+            android:layout_height="158dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <LinearLayout
+                android:id="@+id/Table_GetOldOrder_Button"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginVertical="16dp"
+
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_order_ordered_dish"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/Table_SendOrder_Button"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0">
+
+                <ImageView
+                    android:id="@+id/ic_showOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:gravity="center"
+                    android:paddingStart="25dp"
+                    android:paddingEnd="25dp"
+                    android:paddingTop="10dp" />
+
+                <TextView
+                    android:id="@+id/text_showOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="27dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="@string/showOrder"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Table_SendOrder_Button"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginVertical="16dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_service_send"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/Table_Pay_Button"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/Table_GetOldOrder_Button"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0">
+
+                <ImageView
+                    android:id="@+id/bic_sendOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="76dp"
+                    android:gravity="center"
+                    android:paddingStart="25dp"
+                    android:paddingEnd="25dp"
+                    android:paddingTop="10dp" />
+
+                <TextView
+                    android:id="@+id/text_sendOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="@string/sendOrder"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Table_Pay_Button"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginVertical="16dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_service_payment"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/Table_SendOrder_Button"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0">
+
+                <ImageView
+                    android:id="@+id/ic_tablePay"
+                    android:layout_width="match_parent"
+                    android:layout_height="76dp"
+                    android:gravity="center"
+                    android:paddingStart="25dp"
+                    android:paddingEnd="25dp"
+                    android:paddingTop="10dp" />
+
+                <TextView
+                    android:id="@+id/text_tablePay"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="@string/payOrder"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

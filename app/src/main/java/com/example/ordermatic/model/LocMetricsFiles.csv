@@ -1,0 +1,13 @@
+File,LOC,SLOC-P,SLOC-L,MVG,BLOC,C&SLOC,CLOC,CWORD,HCLOC,HCWORD
+C:\Users\Dominik Schultes\Desktop\Tmp Code Analyse\refactoring-teama-master\app\src\main\java\com\example\ordermatic\model\Company.kt,40,34,4,4,6,0,0,0,0,0
+C:\Users\Dominik Schultes\Desktop\Tmp Code Analyse\refactoring-teama-master\app\src\main\java\com\example\ordermatic\model\CompanyAccount.kt,4,2,0,0,2,0,0,0,0,0
+C:\Users\Dominik Schultes\Desktop\Tmp Code Analyse\refactoring-teama-master\app\src\main\java\com\example\ordermatic\model\Dish.kt,48,42,4,6,6,0,0,0,0,0
+C:\Users\Dominik Schultes\Desktop\Tmp Code Analyse\refactoring-teama-master\app\src\main\java\com\example\ordermatic\model\DishesType.kt,12,10,4,0,2,0,0,0,0,0
+C:\Users\Dominik Schultes\Desktop\Tmp Code Analyse\refactoring-teama-master\app\src\main\java\com\example\ordermatic\model\Order.kt,47,42,4,6,5,1,0,2,0,0
+C:\Users\Dominik Schultes\Desktop\Tmp Code Analyse\refactoring-teama-master\app\src\main\java\com\example\ordermatic\model\OrderDishesStatus.kt,11,9,4,0,2,0,0,0,0,0
+C:\Users\Dominik Schultes\Desktop\Tmp Code Analyse\refactoring-teama-master\app\src\main\java\com\example\ordermatic\model\OrderedDish.kt,52,46,4,7,6,0,0,0,0,0
+C:\Users\Dominik Schultes\Desktop\Tmp Code Analyse\refactoring-teama-master\app\src\main\java\com\example\ordermatic\model\User.kt,43,38,4,5,5,0,0,0,0,0
+C:\Users\Dominik Schultes\Desktop\Tmp Code Analyse\refactoring-teama-master\app\src\main\java\com\example\ordermatic\model\UserRole.kt,13,10,4,0,3,0,0,0,0,0
+C:\Users\Dominik Schultes\Desktop\Tmp Code Analyse\refactoring-teama-master\app\src\main\java\com\example\ordermatic\model\authentication\AuthenticationService.kt,50,45,13,2,5,0,0,0,0,0
+C:\Users\Dominik Schultes\Desktop\Tmp Code Analyse\refactoring-teama-master\app\src\main\java\com\example\ordermatic\model\database\DatabaseService.kt,577,525,143,40,37,0,15,20,0,0
+C:\Users\Dominik Schultes\Desktop\Tmp Code Analyse\refactoring-teama-master\app\src\main\java\com\example\ordermatic\model\helper\OrderedDishesHelper.kt,11,7,0,0,4,0,0,0,0,0

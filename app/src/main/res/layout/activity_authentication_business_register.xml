@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFBEF"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageView_logo_register_success"
+        android:layout_width="222dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="428dp"
+        android:layout_height="350dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_logo_register_success">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="0dp"
+            android:layout_height="350dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editTextCompanyName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:autofillHints=""
+                    android:background="@color/white"
+                    android:elevation="4dp"
+                    android:ems="10"
+                    android:fontFamily="@font/lato_bold"
+                    android:hint="@string/name_des_betriebs"
+                    android:inputType="textPersonName"
+                    android:paddingVertical="9dp"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/editTextCompanyAddressFirstLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:autofillHints=""
+                    android:background="@color/white"
+                    android:elevation="4dp"
+                    android:ems="10"
+                    android:fontFamily="@font/lato_bold"
+                    android:hint="@string/adresszeile1"
+                    android:inputType="textPersonName"
+                    android:paddingVertical="9dp"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextCompanyName" />
+
+                <EditText
+                    android:id="@+id/editTextCompanyAddressSecondLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:autofillHints=""
+                    android:background="@color/white"
+                    android:backgroundTint="#FFFFFF"
+                    android:elevation="4dp"
+                    android:ems="10"
+                    android:fontFamily="@font/lato_bold"
+                    android:hint="@string/adresszeile2"
+                    android:inputType="textPersonName"
+                    android:paddingVertical="9dp"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextCompanyAddressFirstLine" />
+
+                <EditText
+                    android:id="@+id/editTextCompanyPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:autofillHints=""
+                    android:background="@color/white"
+                    android:elevation="4dp"
+                    android:ems="10"
+                    android:fontFamily="@font/lato_bold"
+                    android:hint="@string/passwort"
+                    android:inputType="textPassword"
+                    android:paddingVertical="9dp"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextCompanyAddressFirstLine" />
+
+                <EditText
+                    android:id="@+id/editTextCompanyPasswordRepeat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:autofillHints=""
+                    android:background="@color/white"
+                    android:elevation="4dp"
+                    android:ems="10"
+                    android:fontFamily="@font/lato_bold"
+                    android:hint="@string/passwort_bestaetigen"
+                    android:inputType="textPassword"
+                    android:paddingVertical="9dp"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextCompanyPassword" />
+
+                <EditText
+                    android:id="@+id/editTextAdminName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48dp"
+                    android:autofillHints=""
+                    android:background="@color/white"
+                    android:elevation="4dp"
+                    android:ems="10"
+                    android:fontFamily="@font/lato_bold"
+                    android:hint="@string/name_des_inhabers"
+                    android:inputType="textPersonName"
+                    android:paddingVertical="9dp"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextCompanyPasswordRepeat" />
+
+                <EditText
+                    android:id="@+id/editTextAdminEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:autofillHints=""
+                    android:background="@color/white"
+                    android:elevation="4dp"
+                    android:ems="10"
+                    android:fontFamily="@font/lato_bold"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:paddingVertical="9dp"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextAdminName" />
+
+                <EditText
+                    android:id="@+id/editTextAdminPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:autofillHints=""
+                    android:background="@color/white"
+                    android:backgroundTint="#FFFFFF"
+                    android:elevation="4dp"
+                    android:ems="10"
+                    android:fontFamily="@font/lato_bold"
+                    android:hint="@string/admin_passwort"
+                    android:inputType="textPassword"
+                    android:paddingVertical="9dp"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextAdminEmail" />
+
+                <EditText
+                    android:id="@+id/editTextAdminPasswordRepeat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:autofillHints=""
+                    android:background="@color/white"
+                    android:elevation="4dp"
+                    android:ems="10"
+                    android:fontFamily="@font/lato_bold"
+                    android:hint="@string/admin_passwort_confirm"
+                    android:inputType="textPassword"
+                    android:paddingVertical="9dp"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextAdminPassword" />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/button_general_login"
+        android:elevation="8dp"
+        android:fontFamily="@font/lato_bold"
+        android:onClick="register"
+        android:paddingLeft="50dp"
+        android:paddingTop="16dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="16dp"
+        android:text="@string/registrieren"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
